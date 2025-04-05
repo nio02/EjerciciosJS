@@ -12,7 +12,7 @@ let counter = true;
 
 function cuadrado(a){
     return a * a
-}
+};
 
 function numerosPares(a, b){
     let pares = [];
@@ -22,7 +22,7 @@ function numerosPares(a, b){
         }
     }
     return pares
-}
+};
 
 while (counter == true) {
     console.log("Elija una se las siguientes opciones escribiendo un número:\n 1. Calcular el cuadrado de un número\n 2. Mostrar números pares entre dos valores.\n 3. Salir del programa.");
@@ -31,16 +31,16 @@ while (counter == true) {
 
     if (opcionUsuario == 1){
         let numUsuario = prompt("Introduzca el número del cual quiere saber su cuadrado: ");
-        console.log("El cuadrado de su número es:", cuadrado(numUsuario))
+        console.log("\nEl cuadrado de su número es:", cuadrado(numUsuario), "\n")
     } else if (opcionUsuario == 2){
         let limInferior = prompt("Escriba el límite inferior de su intervalo: ");
         let limSuperior = prompt("Escriba el límite superior de su intervalo: ");
 
-        console.log("Los números pares de su intervalo son:", numerosPares(limInferior, limSuperior));
+        console.log("\nLos números pares de su intervalo son:", numerosPares(limInferior, limSuperior), "\n");
     } else if (opcionUsuario == 3){
         console.log("¡Gracias por utilizar esta calculadora!");
         counter = false
     } else {
         console.log("¡Ingrese un valor válido!")
     }
-}
+};
